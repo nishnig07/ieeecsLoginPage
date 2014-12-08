@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.vit.ieeecsapp.Login"
+    android:background="@drawable/icslogo" >
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Welcome to IEEE-CS VIT "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp" 
+        />"
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="Login Page"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/t2"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="66dp"
+        android:text="Enter Register Number"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e1"
+        android:layout_below="@+id/e1"
+        android:layout_marginTop="30dp"
+        android:text="Enter Date Of Birth"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t3"
+        android:layout_below="@+id/t3"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="eg. 14BCE0001" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t4"
+        android:layout_below="@+id/t4"
+        android:layout_marginTop="12dp"
+        android:hint="eg. 01/01/1992"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Login" />
+
+</RelativeLayout>
